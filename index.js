@@ -10,7 +10,7 @@ const stripeRoute = require("./routes/stripe")
 const ordersRoute = require("./routes/order")
 const cors = require('cors');
 const corsOptions ={
-    origin:"https://padjadjaran-mart.netlify.app", 
+    origin:'http://padjadjaran-mart.netlify.app/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
