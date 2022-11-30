@@ -10,10 +10,9 @@ const stripeRoute = require("./routes/stripe")
 const ordersRoute = require("./routes/order")
 const cors = require('cors');
 const corsOptions ={
-    origin:["https://pmart-admin.netlify.app/","https://padjadjaran-mart.netlify.app/"], 
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    preflightContinue: false,
-    optionsSuccessStatus: 204
+    origin:"*", 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
 }
 
 app.use(cors(corsOptions));
