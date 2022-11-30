@@ -24,7 +24,7 @@ dotenv.config();
 
 // melakukan koneksi ke mongoDB
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("Berhasil melakukan koneksi ke MongoDB"))
   .catch((err) => {
     console.log(err);
