@@ -14,6 +14,7 @@ const corsOptions ={
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
+
 app.use(cors(corsOptions));
 
 
@@ -42,6 +43,4 @@ app.use("/api/orders", ordersRoute);
 app.listen(process.env.PORT || 5000, () => {
   console.log("Server Backend Berjalan!!");
 });
-
-
 
