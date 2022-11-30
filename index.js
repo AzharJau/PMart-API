@@ -11,9 +11,9 @@ const ordersRoute = require("./routes/order")
 const cors = require('cors');
 const corsOptions ={
     origin:["https://pmart-admin.netlify.app/","https://padjadjaran-mart.netlify.app/"], 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204
 }
 
 app.use(cors(corsOptions));
